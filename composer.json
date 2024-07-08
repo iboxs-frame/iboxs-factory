@@ -15,7 +15,10 @@
     "autoload": {
         "psr-4": {
             "iboxs\\": "src"
-        }
+        },
+        "files": [
+            "src/helper.php"
+        ]
     },
     "minimum-stability": "dev",
     "prefer-stable": true
