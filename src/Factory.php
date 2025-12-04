@@ -1,8 +1,8 @@
 <?php
 // +----------------------------------------------------------------------
-// | ThinkPHP [ WE CAN DO IT JUST THINK ]
+// | iboxsPHP [ WE CAN DO IT JUST iboxs ]
 // +----------------------------------------------------------------------
-// | Copyright (c) 2006~2019 http://thinkphp.cn All rights reserved.
+// | Copyright (c) 2006~2019 http://iboxsphp.cn All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
@@ -65,8 +65,8 @@ abstract class Factory
      */
     protected function resolveClass($driver)
     {
-        if ($this->namespace || false !== strpos($driver, '\\')) {
-            $class = false !== strpos($driver, '\\') ? $driver : $this->namespace . Str::studly($driver);
+        if ($this->namespace || str_contains($driver, '\\')) {
+            $class = str_contains($driver, '\\') ? $driver : $this->namespace . Str::studly($driver);
 
             if (class_exists($class)) {
                 return $class;
