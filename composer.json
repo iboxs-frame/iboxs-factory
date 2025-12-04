@@ -9,8 +9,8 @@
         }
     ],
     "require": {
-        "iboxs/iboxs-helper": "^1.*|^2.*",
-        "iboxs/framework": "^2.*|^1.*"
+        "iboxs/iboxs-helper": "^1.0|^2.0",
+        "iboxs/framework": "^2.0|^1.0"
     },
     "autoload": {
         "psr-4": {
